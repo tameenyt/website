@@ -312,6 +312,10 @@ section {
     margin: auto;
 }
 
+section p {
+    margin-bottom: 0.5rem;
+}
+
 /* EXPERIENCE SECTION */
 
 #experience {
@@ -344,7 +348,7 @@ article {
     display: flex;
     width: 10rem;
     justify-content: space-around;
-    gap: 0.5rem;
+    gap: 0rem;
 }
 
 article.icon {
