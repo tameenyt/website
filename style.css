@@ -353,6 +353,10 @@ article .icon {
   cursor: default;
 }
 
+/* Certifcates Section */
+#certificates {
+  height: 0;
+}
 /* PROJECTS SECTION */
 
 #projects {
