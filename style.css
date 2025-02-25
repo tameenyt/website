@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  background-color: rgba(234, 234, 234, 0.427);
 }
 
 html {
@@ -433,4 +434,55 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* Scrolling Background */
+
+.scrolling-background {
+  position: relative;
+  height: 15vh;
+  width: 100%;
+  overflow: visible;
+  /* color: white; */
+  text-align: center;
+  padding: 20px;
+}
+
+.scrolling-background::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('assets/wave.jpg');
+  background-size: cover;
+  background-position: 0 0;
+  animation: scrollBackground 10s ease-in-out infinite; /* Slow and smooth */
+  z-index: -1;
+}
+
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 100% 0;
+  }
+}
+
+.other-section {
+  padding: 20px;
+  background-color: rgba(0, 0, 0, 0.7);
+  margin-top: 50vh;
+}
+
+/* Keyframes for scrolling animation */
+@keyframes scrollBackground {
+  from {
+    background-position: 0 0; /* Start position */
+  }
+  to {
+    background-position: 100% 0; /* End position */
+  }
 }
